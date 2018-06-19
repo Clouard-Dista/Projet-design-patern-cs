@@ -1,0 +1,6 @@
+commande livraison restaurant asiatique
+	- pattern factory sushi
+	- pattern state cru ou cuit
+	- pattern composite pour la création des menus
+	- pattern singleton pour une unique facture
+	- pattern facade pour la création de commande ( ajout - enlever - valider - annulations - 4 services)

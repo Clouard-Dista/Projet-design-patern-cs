@@ -4,5 +4,9 @@
     {
         long GetPrix();
         string GetNom();
+        //pattern Etat
+        bool GetCook();
+        void Cooked();
+        void UnCooked();
     }
 }

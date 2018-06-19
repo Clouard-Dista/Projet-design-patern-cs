@@ -18,6 +18,10 @@ namespace RestaurantAsiatique.Sushi
 
         public long GetTempsPreparation()
         {
+            if (Poisson.GetCook())
+            {
+                TempsPreparation = TempsPreparation + 5;
+            }
             return TempsPreparation;
         }
         public string GetNom()

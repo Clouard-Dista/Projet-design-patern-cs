@@ -9,6 +9,12 @@ namespace RestaurantAsiatique
         private List<IProduit> Produits;
         private double TVA = 5;
         private static readonly Facture _facture = new Facture();
+
+        internal void addProduit()
+        {
+            throw new NotImplementedException();
+        }
+
         public Facture()
         {
             _facture.DateDeCreation = DateTime.Now;

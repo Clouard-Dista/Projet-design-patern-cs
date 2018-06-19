@@ -1,5 +1,5 @@
-﻿using RestaurantAsiatique.sushiMaker;
-using RestaurantAsiatique.sushiMaker.Poisson;
+﻿using RestaurantAsiatique.Sushi;
+using RestaurantAsiatique.Sushi.Poisson;
 
 namespace ConsoleApp1.Sushi.Fabric
 {
