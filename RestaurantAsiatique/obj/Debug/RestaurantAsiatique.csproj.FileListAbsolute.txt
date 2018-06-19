@@ -1,0 +1,6 @@
+C:\Users\raphi\Desktop\ESGI\4EME ANNEE\DESIGNPATTERNS\ProjetDesignPattern\Projet-design-patern-cs\RestaurantAsiatique\obj\Debug\RestaurantAsiatique.csproj.CoreCompileInputs.cache
+C:\Users\raphi\Desktop\ESGI\4EME ANNEE\DESIGNPATTERNS\ProjetDesignPattern\Projet-design-patern-cs\RestaurantAsiatique\bin\Debug\ConsoleApp2.exe.config
+C:\Users\raphi\Desktop\ESGI\4EME ANNEE\DESIGNPATTERNS\ProjetDesignPattern\Projet-design-patern-cs\RestaurantAsiatique\bin\Debug\ConsoleApp2.exe
+C:\Users\raphi\Desktop\ESGI\4EME ANNEE\DESIGNPATTERNS\ProjetDesignPattern\Projet-design-patern-cs\RestaurantAsiatique\bin\Debug\ConsoleApp2.pdb
+C:\Users\raphi\Desktop\ESGI\4EME ANNEE\DESIGNPATTERNS\ProjetDesignPattern\Projet-design-patern-cs\RestaurantAsiatique\obj\Debug\ConsoleApp2.exe
+C:\Users\raphi\Desktop\ESGI\4EME ANNEE\DESIGNPATTERNS\ProjetDesignPattern\Projet-design-patern-cs\RestaurantAsiatique\obj\Debug\ConsoleApp2.pdb
