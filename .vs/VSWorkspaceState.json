@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\RestaurantAsiatique",
+    "\\RestaurantAsiatique\\user",
+    "\\UnitTestProject4"
   ],
-  "SelectedNode": "\\ConsoleApp1.sln",
+  "SelectedNode": "\\RestaurantAsiatique\\user\\User.cs",
   "PreviewInSolutionExplorer": false
 }

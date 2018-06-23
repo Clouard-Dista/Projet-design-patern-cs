@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2.sushiMaker.Menu
 {
-    class MenuAllTuna
+    class MenuAllTuna : IMenu
     {
         private long Prix = 11;
         private long TempsPreparation = 30;
