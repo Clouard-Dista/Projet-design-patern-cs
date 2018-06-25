@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2.sushiMaker.Menu
+namespace RestaurantAsiatique
 {
-    class MenuAllSalmon : IMenu
+    public class MenuAllSalmon : IMenu
     {
         private long Prix = 12;
         private long TempsPreparation = 30;
         private string Nom = "Menu All Salmon";
-        private List<IMenu> menus = new List<IMenu>();
+
+        public MenuAllSalmon() { }
         public long GetPrix()
         {
             return Prix;

@@ -34,6 +34,16 @@ namespace RestaurantAsiatique
         {
             return prix + ((double)prix / 100 * this.TVA);
         }
+
+        public double getTTc()
+        {
+            long prixTotal = 0;
+            foreach (var produit in this.Produits)
+            {
+                prixTotal += produit.GetPrix();
+            }
+            return calculTaxe(prixTotal);
+        }
         public string toString()
         {
             string pattern = "dd/MM/yy H:mm:ss";

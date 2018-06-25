@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RestaurantAsiatique;
 
-namespace ConsoleApp2.sushiMaker.Menu
+namespace RestaurantAsiatique
 {
-    public interface IMenu
+    public interface IMenu:IProduit
     {
         void DisplayMenu();
+        
     }
 }

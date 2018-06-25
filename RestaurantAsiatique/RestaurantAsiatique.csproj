@@ -62,6 +62,7 @@
     <Compile Include="IEnumerator.cs" />
     <Compile Include="IProduit.cs" />
     <Compile Include="IterateurCommande.cs" />
+    <Compile Include="Menu\MenuAllTuna.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Restaurant.cs" />
@@ -71,10 +72,9 @@
     <Compile Include="sushiMaker\ISushi.cs" />
     <Compile Include="sushiMaker\ISushiCreator.cs" />
     <Compile Include="sushiMaker\Maki.cs" />
-    <Compile Include="sushiMaker\Menu\IMenu.cs" />
-    <Compile Include="sushiMaker\Menu\MenuAllBream.cs" />
-    <Compile Include="sushiMaker\Menu\MenuAllSalmon.cs" />
-    <Compile Include="sushiMaker\Menu\MenuAllTuna.cs" />
+    <Compile Include="Menu\IMenu.cs" />
+    <Compile Include="Menu\MenuAllBream.cs" />
+    <Compile Include="Menu\MenuAllSalmon.cs" />
     <Compile Include="sushiMaker\Nigiri.cs" />
     <Compile Include="sushiMaker\Poisson\Daurade.cs" />
     <Compile Include="sushiMaker\Poisson\IPoisson.cs" />
