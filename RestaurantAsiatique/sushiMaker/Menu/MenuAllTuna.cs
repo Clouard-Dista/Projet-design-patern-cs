@@ -28,15 +28,5 @@ namespace ConsoleApp2.sushiMaker.Menu
         {
             Console.Write(Nom + "\n\nPour 11€ vous avez : \n- 1 maki thon\n- 1 nigiri thon\n- 2 temaki thon\n- 1 uramaki thon");
         }
-
-        public void AddMenu()
-        {
-            menus.Add(MenuAllTuna);
-        }
-
-        public void RemoveMenu()
-        {
-            menus.Remove(MenuAllTuna);
-        }
     }
 }

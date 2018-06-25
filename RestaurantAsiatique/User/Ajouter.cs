@@ -10,7 +10,6 @@ namespace RestaurantAsiatique.User
     {
         public void choiceOptions()
         {
-            Console.write("Ajouter un produit");
         }
     }
 }

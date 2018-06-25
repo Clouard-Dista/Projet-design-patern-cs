@@ -9,7 +9,5 @@ namespace ConsoleApp2.sushiMaker.Menu
     public interface IMenu
     {
         void DisplayMenu();
-        void AddMenu();
-        void RemoveMenu();
     }
 }

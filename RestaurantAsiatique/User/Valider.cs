@@ -1,7 +1,7 @@
 ﻿using System;
 namespace RestaurantAsiatique.User
 {
-    public class Valider
+    public class Valider : IOptions
     {
         public void choiceOptions()
         {

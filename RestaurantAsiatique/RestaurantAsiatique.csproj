@@ -57,8 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Facture.cs" />
-    <Compile Include="ICuisson.cs" />
+    <Compile Include="Commande.cs" />
     <Compile Include="IProduit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,6 +79,13 @@
     <Compile Include="sushiMaker\SushiCreator.cs" />
     <Compile Include="sushiMaker\Temaki.cs" />
     <Compile Include="sushiMaker\Uramaki.cs" />
+    <Compile Include="User\Ajouter.cs" />
+    <Compile Include="User\Annuler.cs" />
+    <Compile Include="User\Enlever.cs" />
+    <Compile Include="User\IOptions.cs" />
+    <Compile Include="User\OptionsMaker.cs" />
+    <Compile Include="User\User.cs" />
+    <Compile Include="User\Valider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

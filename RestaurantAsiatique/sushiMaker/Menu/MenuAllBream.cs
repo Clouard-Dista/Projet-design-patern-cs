@@ -28,15 +28,5 @@ namespace ConsoleApp2.sushiMaker.Menu
         {
             Console.Write(Nom + "\n\nPour 10€ vous avez : \n- 1 maki daurade\n- 1 nigiri daurade\n- 2 temaki daurade\n- 1 uramaki daurade");
         }
-
-        public void AddMenu()
-        {
-            menus.Add(MenuAllBream);
-        }
-
-        public void RemoveMenu()
-        {
-            menus.Remove(MenuAllBream);
-        }
     }
 }

@@ -3,30 +3,30 @@ using System.Collections.Generic;
 
 namespace RestaurantAsiatique
 {
-    public class Facture
+    public class Commande
     {
         private DateTime DateDeCreation;
         private List<IProduit> Produits;
-        private double TVA = 5;
-        private static readonly Facture _facture = new Facture();
+        private double TVA;
 
         internal void addProduit()
         {
             throw new NotImplementedException();
         }
 
-        public Facture()
+        public Commande(int tva = 5)
         {
-            _facture.DateDeCreation = DateTime.Now;
+            this.TVA = tva;
+            this.DateDeCreation = DateTime.Now;
         }
 
         public void addProduit(IProduit produit)
         {
-            _facture.Produits.Add(produit);
+            this.Produits.Add(produit);
         }
         public double calculTaxe(long prix)
         {
-            return prix + ((double)prix / 100 * _facture.TVA);
+            return prix + ((double)prix / 100 * this.TVA);
         }
         public string toString()
         {
@@ -34,8 +34,8 @@ namespace RestaurantAsiatique
             string factureTotal="";
             long tempsTotal = 0;
             long prixTotal = 0;
-            factureTotal = "Facture du:" + _facture.DateDeCreation.ToString(pattern)+"\n";
-            foreach (var produit in _facture.Produits)
+            factureTotal = "Facture du:" + this.DateDeCreation.ToString(pattern)+"\n";
+            foreach (var produit in this.Produits)
             {
                 factureTotal += produit.GetNom() + "//" + produit.GetPrix() + "\n";
                 tempsTotal += produit.GetTempsPreparation();
@@ -46,11 +46,6 @@ namespace RestaurantAsiatique
             factureTotal += "Temps de preparation " + ttm + "m " + tts + "s.\n";
             factureTotal += "Prix ttc " + calculTaxe(prixTotal) + "€";
             return factureTotal;
-        }
-
-        public static Facture GetInstance()
-        {
-            return _facture;
         }
     }
 }
