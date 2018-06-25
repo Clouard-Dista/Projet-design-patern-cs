@@ -68,6 +68,10 @@
     <Compile Include="sushiMaker\ISushi.cs" />
     <Compile Include="sushiMaker\ISushiCreator.cs" />
     <Compile Include="sushiMaker\Maki.cs" />
+    <Compile Include="sushiMaker\Menu\IMenu.cs" />
+    <Compile Include="sushiMaker\Menu\MenuAllBream.cs" />
+    <Compile Include="sushiMaker\Menu\MenuAllSalmon.cs" />
+    <Compile Include="sushiMaker\Menu\MenuAllTuna.cs" />
     <Compile Include="sushiMaker\Nigiri.cs" />
     <Compile Include="sushiMaker\Poisson\Daurade.cs" />
     <Compile Include="sushiMaker\Poisson\IPoisson.cs" />
