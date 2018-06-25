@@ -6,31 +6,30 @@ namespace ConsoleApp2
     public class Restaurant
     {
         private int lastCommandeId = 0;
-        private Dictionary<int, Commande> listCommande = new Dictionary<int, Commande>();
         private static readonly Restaurant _Restaurant = new Restaurant();
+        IterateurCommande listCommande = new IterateurCommande();
         private Restaurant()
         {
 
         }
 
-        public int addCommande(Commande commande)
+        public static int addCommande(Commande commande)
         {
-            lastCommandeId++;
-            listCommande.Add(lastCommandeId, commande);
-            return lastCommandeId;
+            return _Restaurant.listCommande.Add(commande);
         }
-        public Commande getCommande(int id)
+        public static Commande getCommande(int id)
         {
-            return listCommande[id];
+            return _Restaurant.listCommande.Get(id);
         }
-        public Dictionary<int, Commande> getCommandeEnAttente()
+        public static Dictionary<int, Commande> getCommandeEnAttente()
         {
+            _Restaurant.listCommande.Reset();
             Dictionary<int, Commande> listCommandeEnAttente = new Dictionary<int, Commande>();
-            foreach (var commande in listCommande)
+            while (_Restaurant.listCommande.MoveNext())
             {
-                if (commande.Value.IsComplete() && !commande.Value.IsFinish())
+                if (((Commande)_Restaurant.listCommande.Current).State()==EStateCommande.Valider)
                 {
-                    listCommandeEnAttente.Add(commande.Key, commande.Value);
+                    listCommandeEnAttente.Add(_Restaurant.listCommande.CurrentId, (Commande)_Restaurant.listCommande.Current);
                 }
             }
             return listCommandeEnAttente;

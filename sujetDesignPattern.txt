@@ -1,6 +1,6 @@
 commande livraison restaurant asiatique
 	v - pattern factory sushi
 	r - pattern state cru ou cuit
-	- pattern composite pour la création des menus
-	v - pattern singleton pour une unique facture
-	- pattern facade pour la création de commande ( ajout - enlever - valider - annulations - 4 services)
+	r - pattern composite pour la création des menus
+	v - pattern singleton pour un unique restausant
+	v - pattern Iteratror pour la recuperation des commandes en cours

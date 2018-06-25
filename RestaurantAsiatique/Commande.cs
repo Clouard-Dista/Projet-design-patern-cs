@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ConsoleApp2;
 
 namespace RestaurantAsiatique
 {
@@ -8,8 +9,7 @@ namespace RestaurantAsiatique
         private DateTime DateDeCreation;
         private List<IProduit> Produits;
         private double TVA;
-        private bool complete = false;
-        private bool finish = false;
+        private EStateCommande state = EStateCommande.EnCours;
 
         internal void addProduit()
         {
@@ -25,6 +25,10 @@ namespace RestaurantAsiatique
         public void addProduit(IProduit produit)
         {
             this.Produits.Add(produit);
+        }
+        public void removeDernierProduit()
+        {
+            this.Produits.RemoveAt(this.Produits.Count-1);
         }
         public double calculTaxe(long prix)
         {
@@ -49,19 +53,25 @@ namespace RestaurantAsiatique
             factureTotal += "Prix ttc " + calculTaxe(prixTotal) + "€";
             return factureTotal;
         }
-        public bool IsComplete()
+        public EStateCommande State()
         {
-            return this.complete;
+            return this.state;
         }
 
-        public bool IsFinish()
+        public void Validate()
         {
-            return this.finish;
+            if (this.state == EStateCommande.EnCours)
+            {
+                this.state = EStateCommande.Valider;
+            }
+            else if (this.state == EStateCommande.Valider)
+            {
+                this.state = EStateCommande.Fini;
+            }
         }
-        public bool IsFinish(bool etat)
+        public void Cancel()
         {
-            this.finish = etat;
-            return this.finish;
+            this.state = EStateCommande.Annuler;
         }
     }
 }
