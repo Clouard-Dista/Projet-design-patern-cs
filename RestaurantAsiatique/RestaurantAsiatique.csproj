@@ -61,6 +61,7 @@
     <Compile Include="IProduit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restaurant.cs" />
     <Compile Include="sushiMaker\Fabric\DauradeFabric.cs" />
     <Compile Include="sushiMaker\Fabric\SaumonFabric.cs" />
     <Compile Include="sushiMaker\Fabric\ThonFabric.cs" />

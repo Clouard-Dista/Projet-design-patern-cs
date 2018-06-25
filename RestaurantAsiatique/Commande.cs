@@ -8,6 +8,8 @@ namespace RestaurantAsiatique
         private DateTime DateDeCreation;
         private List<IProduit> Produits;
         private double TVA;
+        private bool complete = false;
+        private bool finish = false;
 
         internal void addProduit()
         {
@@ -46,6 +48,20 @@ namespace RestaurantAsiatique
             factureTotal += "Temps de preparation " + ttm + "m " + tts + "s.\n";
             factureTotal += "Prix ttc " + calculTaxe(prixTotal) + "€";
             return factureTotal;
+        }
+        public bool IsComplete()
+        {
+            return this.complete;
+        }
+
+        public bool IsFinish()
+        {
+            return this.finish;
+        }
+        public bool IsFinish(bool etat)
+        {
+            this.finish = etat;
+            return this.finish;
         }
     }
 }
