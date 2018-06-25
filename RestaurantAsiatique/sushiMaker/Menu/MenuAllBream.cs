@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2.sushiMaker.Menu
 {
-    class MenuAllBream
+    class MenuAllBream : IMenu
     {
         private long Prix = 10;
         private long TempsPreparation = 30;
@@ -39,5 +39,4 @@ namespace ConsoleApp2.sushiMaker.Menu
             menus.Remove(MenuAllBream);
         }
     }
-}
 }
