@@ -5,7 +5,7 @@ namespace ConsoleApp2
 {
     public class IterateurCommande : IEnumerator
     {
-        private List<Commande> _chainesAParcourir;
+        private List<Commande> _chainesAParcourir =new List<Commande>();
         private int _positionCourante = -1;
         public int lastId = 0;
 

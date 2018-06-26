@@ -7,7 +7,7 @@ namespace RestaurantAsiatique
     public class Commande
     {
         private DateTime DateDeCreation;
-        private List<IProduit> Produits;
+        private List<IProduit> Produits = new List<IProduit>();
         private double TVA;
         private EStateCommande state = EStateCommande.EnCours;
 
