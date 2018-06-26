@@ -21,13 +21,13 @@ namespace ConsoleApp2
         {
             return _Restaurant.listCommande.Get(id);
         }
-        public static Dictionary<int, Commande> getCommandeEnAttente()
+        public static Dictionary<int, Commande> getCommande(EStateCommande State = EStateCommande.All)
         {
             _Restaurant.listCommande.Reset();
             Dictionary<int, Commande> listCommandeEnAttente = new Dictionary<int, Commande>();
             while (_Restaurant.listCommande.MoveNext())
             {
-                if (((Commande)_Restaurant.listCommande.Current).State()==EStateCommande.Valider)
+                if (State == EStateCommande.All || (((Commande)_Restaurant.listCommande.Current).State() == State))
                 {
                     listCommandeEnAttente.Add(_Restaurant.listCommande.CurrentId, (Commande)_Restaurant.listCommande.Current);
                 }

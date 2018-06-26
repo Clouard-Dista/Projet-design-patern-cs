@@ -5,6 +5,7 @@
         EnCours,
         Valider,
         Fini,
-        Annuler
+        Annuler,
+        All
     }
 }

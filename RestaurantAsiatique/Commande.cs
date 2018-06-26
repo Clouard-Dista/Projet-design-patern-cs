@@ -60,7 +60,7 @@ namespace RestaurantAsiatique
             long tts = tempsTotal % 60;
             long ttm = (tempsTotal - tts) / 60;
             factureTotal += "Temps de preparation " + ttm + "m " + tts + "s.\n";
-            factureTotal += "Prix ttc " + calculTaxe(prixTotal) + "€";
+            factureTotal += "Prix ttc " + calculTaxe(prixTotal) + "eur.\n";
             return factureTotal;
         }
         public EStateCommande State()
