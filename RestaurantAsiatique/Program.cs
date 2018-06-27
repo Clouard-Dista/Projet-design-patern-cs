@@ -23,8 +23,9 @@ namespace ConsoleApp2
             Restaurant.getCommande(id_commande).addProduit(MenuA);
             Restaurant.getCommande(id_commande).getTTc();
             Restaurant.getCommande(id_commande).toString();
+            Console.Write(Restaurant.getCommande(id_commande).toString());
             Restaurant.getCommande(id_commande).Validate();
-            var list = Restaurant.getCommande(EStateCommande.Valider);
+            var list = Restaurant.getCommandeList(EStateCommande.Valider);
             Restaurant.getCommande(id_commande).toString();
             Restaurant.getCommande(id_commande).Validate();
         }

@@ -51,7 +51,7 @@ namespace UnitTestProject4
             //il valide sa commande
             Restaurant.getCommande(id_commande).Validate();
             //en cuisine il veules les commande non préparé
-            var list = Restaurant.getCommandeEnAttente();
+            var list = Restaurant.getCommandeList(EStateCommande.Valider);
             //en cuisine il veules voir le detail d'une commande non préparé affiché grace a notre liste
             //(pour que se soit plus pratique on va dire d'ils on cliqué sur la commande de notre client)
             Restaurant.getCommande(id_commande).toString();

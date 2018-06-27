@@ -21,7 +21,7 @@ namespace ConsoleApp2
         {
             return _Restaurant.listCommande.Get(id);
         }
-        public static Dictionary<int, Commande> getCommande(EStateCommande State = EStateCommande.All)
+        public static Dictionary<int, Commande> getCommandeList(EStateCommande State = EStateCommande.All)
         {
             _Restaurant.listCommande.Reset();
             Dictionary<int, Commande> listCommandeEnAttente = new Dictionary<int, Commande>();
